@@ -1,0 +1,15 @@
+{
+    "fs":{
+        "ls": {
+            "cmd": "ls {path} -l"
+        },
+        "du": {
+            "cmd": "ls {dir} -sh"
+        }
+    },
+    "process": {
+        "ps": {
+            "cmd": "ps ux"
+        }
+    }
+}
