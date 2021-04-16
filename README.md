@@ -73,9 +73,9 @@ generate a webserver from cmdline tools
 
 4. 访问你的服务：
 
-    curl 'http://localhost:8080/fs/ls/?path=/'
-    curl 'http://localhost:8080/fs/du/?dir=./'
-    curl 'http://localhost:8080/process/ps/'
+        curl 'http://localhost:8080/fs/ls/?path=/'
+        curl 'http://localhost:8080/fs/du/?dir=./'
+        curl 'http://localhost:8080/process/ps/'
 
 
 # 未来计划
