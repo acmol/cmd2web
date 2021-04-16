@@ -6,7 +6,7 @@ generate a webserver from cmdline tools
 
 1. install requirements
 
-    pip install -r requirements.txt
+    `pip install -r requirements.txt`
 
 2. write a json file as config like this into config.json
 
@@ -28,7 +28,7 @@ generate a webserver from cmdline tools
 
 3. run cmd2web.py:
     
-    python cmd2web.py
+    `python cmd2web.py`
 
 
 4. access your server
@@ -46,7 +46,7 @@ generate a webserver from cmdline tools
 
 1. 安装依赖
 
-    pip install -r requirements.txt
+    `pip install -r requirements.txt`
 
 2. 写一个配置文件，内容类似下边这个，写到config.json里
 
@@ -68,7 +68,7 @@ generate a webserver from cmdline tools
 
 3. 用Python执行cmd2web.py:
     
-    python cmd2web.py
+    `python cmd2web.py`
 
 
 4. 访问你的服务：
