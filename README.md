@@ -10,21 +10,21 @@ generate a webserver from cmdline tools
 
 2. write a json file as config like this into config.json
 
-    {
-        "fs":{
-            "ls": {
-                "cmd": "ls {path} -l"
+        {
+            "fs":{
+                "ls": {
+                    "cmd": "ls {path} -l"
+                },
+                "du": {
+                    "cmd": "du {dir} -sh"
+                }
             },
-            "du": {
-                "cmd": "du {dir} -sh"
-            }
-        },
-        "process": {
-            "ps": {
-                "cmd": "ps ux"
+            "process": {
+                "ps": {
+                    "cmd": "ps ux"
+                }
             }
         }
-    }
 
 3. run cmd2web.py:
     
@@ -50,21 +50,21 @@ generate a webserver from cmdline tools
 
 2. 写一个配置文件，内容类似下边这个，写到config.json里
 
-    {
-        "fs":{
-            "ls": {
-                "cmd": "ls {path} -l"
+        {
+            "fs":{
+                "ls": {
+                    "cmd": "ls {path} -l"
+                },
+                "du": {
+                    "cmd": "du {dir} -sh"
+                }
             },
-            "du": {
-                "cmd": "du {dir} -sh"
-            }
-        },
-        "process": {
-            "ps": {
-                "cmd": "ps ux"
+            "process": {
+                "ps": {
+                    "cmd": "ps ux"
+                }
             }
         }
-    }
 
 3. 用Python执行cmd2web.py:
     
