@@ -33,9 +33,9 @@ generate a webserver from cmdline tools
 
 4. access your server
 
-    curl 'http://localhost:8080/fs/ls/?path=/'
-    curl 'http://localhost:8080/fs/du/?dir=./'
-    curl 'http://localhost:8080/process/ps/'
+        curl 'http://localhost:8080/fs/ls/?path=/'
+        curl 'http://localhost:8080/fs/du/?dir=./'
+        curl 'http://localhost:8080/process/ps/'
 
 
 # cmd2web
@@ -86,20 +86,20 @@ generate a webserver from cmdline tools
 
 例如，用户进行如下配置（markdown语法）：
 
-    ## 文件服务
-    ### 列出文件
-        
-    cmd: `ls <path> [-a : 显示隐藏文件]` 
-    desc: 用来列出path目录下的文件
+        ## 文件服务
+        ### 列出文件
+            
+        cmd: `ls <path> [-a : 显示隐藏文件]` 
+        desc: 用来列出path目录下的文件
 
-    ### 计算文件大小
+        ### 计算文件大小
 
-    cmd: `du <dir> -sh`
+        cmd: `du <dir> -sh`
 
-    ## 进程服务
-    ### 查看进程
+        ## 进程服务
+        ### 查看进程
 
-    cmd:  `ps ux` 
+        cmd:  `ps ux` 
 
 就可以生成一个网页，有二级选择菜单，选择完之后，例如选择了“列出文件”子菜单， 网页正文位置就会显示出一个输入框，让用户输入path的值，还有一个复选框，让用户选择是否“列出隐藏文件”，并有一个提交按钮，用户提交后就会在下方显示出命令的执行结果。
 
