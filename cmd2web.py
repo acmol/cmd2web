@@ -33,6 +33,9 @@ def generate_config(config):
                 }
                 return json.dumps(ret)
 
+            def POST(self):
+                return self.GET()
+
         return [('/.*', __unnamed__)]
 
     elif isinstance(config, list) or isinstance(config, tuple):
@@ -49,7 +52,7 @@ if __name__ == "__main__":
         config_file = sys.argv[1]
     with open(config_file) as f:
         gen = generate_config(json.load(f))
-        
+
     urls = []
     for url, action in gen:
         urls.append(url)
