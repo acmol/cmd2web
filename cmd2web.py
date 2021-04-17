@@ -21,7 +21,9 @@ def generate_config(config):
     if 'cmd' in config:
         class __unnamed__:
             def GET(self):
-                cmd = config['cmd'].format(**dict(web.input()))
+                import shlex
+                params ={ k: shlex.quote(v) for k, v in web.input().items() }
+                cmd = config['cmd'].format(**params)
                 proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=-1)
                 proc.wait()
                 stream_stdout = io.TextIOWrapper(proc.stdout, encoding='utf-8')
